@@ -1,11 +1,14 @@
-.container
-	ul.nav
-		li.nav-item
+.container-fluid
+	ul.nav.row
+		li.nav-item.col
+			img(src="img/list-ol.png", alt="")
 			a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') Calendar
-		li.nav-item
+		li.nav-item.col
+			img(src="img/calendar-alt.png", alt="")
 			a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home') Messages for you
-
-		li.nav-item
-			a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home') Home
-		li.nav-item
-			a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home') Home
+		li.nav-item.col
+			img(src="img/bell.png", alt="")
+			a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home') Messages for you
+		li.nav-item.col
+			img(src="img/bars.png", alt="")
+			a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home') Ask For Help

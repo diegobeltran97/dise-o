@@ -1,0 +1,19 @@
+
+#myTabContent.tab-content
+	#home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+		.row.mt-3
+			.col-5
+				include cardProgress.pug
+			.col-5
+				include cardProgress.pug
+			
+
+	#profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+		.row.mt-3
+			.col-4
+				include cardUpComing.pug
+			.col-4
+				include cardUpComing.pug
+			.col-4
+				include cardUpComing.pug
+	#contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab') ...

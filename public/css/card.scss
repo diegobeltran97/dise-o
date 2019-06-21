@@ -1,0 +1,89 @@
+.card-activity {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px 0 rgba(193, 199, 208, 0.8);
+    background-color: #f4f5f7;
+    border-left: 4px solid #7d0d90 ;
+}
+.card-start {
+  width: 100%;
+  height: 124px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-start img {
+    width: 103px;
+    height: 102px; 
+}
+.this-activity-start {
+  font-size: 16.8px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #2d2f3a;
+}
+.upcoming{
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #21232b;
+}
+// In progress
+.card-start-progress {
+  width: 100%;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chartjs-render-monitor{
+  animation: chartjs-render-animation 1ms;
+  animation-duration: 1ms;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: chartjs-render-animation;
+}
+.inprogress {
+ background-color: #ffbe26;
+ border-radius: 2px;
+ padding: 4px;
+ color: #21232b;
+ font-weight: bold;
+ 
+}
+.card-start-progress ul li {
+  list-style: none;
+  
+}
+
+.card-start-progress ul span:before {
+  
+  content: '';
+  display: block;
+  height: 10px;
+  position: relative;
+  top: 23px;
+  left: -25px;
+  width: 20px;
+  background-color: #2d2f3a;
+  margin-right: 5px;
+  border-radius: 2px;
+
+}
+
+
+
