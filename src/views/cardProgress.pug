@@ -7,16 +7,20 @@
         | Onces start the activity, you have 1 hour to complete it
     .card-start-progress.row
         .col-6
-            canvas.myChart.chartjs-render-monitor
+            canvas.myChart-js.chartjs-render-monitor
         .col-6
             p Polling stations
             ul
-                span
-                li Pending
-                span
-                li In Progress
-                span
-                li Completed
-                span
-                li With ticket
+                .row
+                    div.rectangle-status
+                    li Pending
+                .row
+                    div.rectangle-status
+                    li In Progress
+                .row
+                    div.rectangle-status
+                    li Completed
+                .row
+                    div.rectangle-status
+                    li With ticket
 
