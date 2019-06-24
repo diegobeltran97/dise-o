@@ -16,6 +16,10 @@ app.get('/', (req, res) => {
   res.render("index");
 });
 
+app.get('/smtally', (req, res) => {
+  res.render("smartally");
+});
+
 app.listen(port, () => {
   console.log(`listening on port ${ port }`);
 });

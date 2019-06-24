@@ -1,0 +1,10 @@
+.main-sidebar {
+    border-left: 4px solid #1c6983;
+   padding-left: 0;
+}
+.main-sidebar .card-activity {
+    border: none;
+}
+.main-sidebar .card-activity .inprogress {
+    display: none;
+}

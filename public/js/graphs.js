@@ -2,7 +2,18 @@
   var App = {
     htmlElements: {
       cardProgress: document.getElementsByClassName("myChart-js"),
-      cardActivty: document.getElementsByClassName('card-activity')
+      
+    },
+    cardActivty: {
+       element: document.getElementsByClassName('card-activity'),
+       status: true,
+       addActivity: function(){
+           Array.from( App.cardActivty.element).map( card => {
+                if ( App.cardActivty.status == true) {
+                    card.addEventListener('click', App.cards );
+                }
+           })
+       }
     },
 
     graph: function() {
@@ -21,7 +32,13 @@
       });
     },
 
+    cards: function(){
+       console.log('hey');
+
+    },
+
     init: function() {
+      App.cardActivty.addActivity();
       console.log("inicio");
       App.graph();
     }
