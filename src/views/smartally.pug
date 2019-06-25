@@ -10,25 +10,14 @@ html
 						include cardProgress
 						form.nav-item
 							input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
-						ul.nav.flex-column
-							li.list-group-item.d-flex.justify-content-between.align-items-center
-								| Cras justo odio
-								
-						ul.nav.flex-column.list-group
-							li.list-group-item.d-flex.justify-content-between.align-items-center
-								| Cras justo odio
-						ul.nav.flex-column.list-group
-							li.list-group-item.d-flex.justify-content-between.align-items-center
-								| Cras justo odio
-						ul.nav.flex-column.list-group
-							li.list-group-item.d-flex.justify-content-between.align-items-center
-								| Cras justo odio
-						ul.nav.flex-column.list-group
-							li.list-group-item.d-flex.justify-content-between.align-items-center
-								| Cras justo odio
-						ul.nav.flex-column.list-group
-							li.list-group-item.d-flex.justify-content-between.align-items-center
-								| Cras justo odio
+						ul.nav.flex-column.accordion.accordionExample
+							ul.drodropdown-menu(data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne")
+								| Pollin Station
+								span.badge.badge-primary.badge-pill 14
+								p Mark attendance or lack the poll worker
+								li#collapseOne.collapse.show
+									| ete
+									
 				
 				
 				

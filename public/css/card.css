@@ -1,5 +1,4 @@
 .card-activity {
-  width: 100%;
   border-radius: 6px;
   -webkit-box-shadow: 0 2px 6px 0 rgba(193, 199, 208, 0.8);
           box-shadow: 0 2px 6px 0 rgba(193, 199, 208, 0.8);
@@ -99,13 +98,37 @@ a.lin:hover {
           animation-name: chartjs-render-animation;
 }
 
-.inprogress {
-  background-color: #ffbe26;
+.status {
+  height: 24px;
   border-radius: 12px;
-  padding: 4px;
-  color: #21232b;
+  padding: 0 8px;
+  color: #593e00;
   font-weight: bold;
-  line-height: 1.71;
+}
+
+.status-progress {
+  background-color: #ffbe26;
+}
+
+.status-upcoming {
+  background-color: #dfe1e5;
+}
+
+.angle-right {
+  width: 24px;
+  height: 25px;
+}
+
+.card-start-progress p {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+
+.card-start-progress ul {
+  padding-left: 20px;
 }
 
 .card-start-progress ul li {
@@ -116,10 +139,6 @@ a.lin:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.card-start-progress ul {
-  padding-left: 20px;
 }
 
 .rectangle-status {

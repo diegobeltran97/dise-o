@@ -3,16 +3,18 @@ a(href="smtally").lin
 		.card-body
 			.row.title-card
 					h5.card-title.col-9 Send Results
-					span.card-subtitle.mb-2.text-muted.inprogress In progress
-			p.card-text
+					span.card-subtitle.mb-2.status.status-progress In progress
+			.row
+				p.card-text.col-11
 					| Onces start the activity, you have 1 hour to complete it
+				div.col-1
+					img(src='img/angle-right.png').angle-right
 			.card-start-progress.row
-					.col-6
+					.col-7
 							canvas.myChart-js.chartjs-render-monitor
-					.col-6
-							p Polling stations
+					.col-5
+							p Polling stations:
 							ul
-								
 								li 
 									div.rectangle-status 
 									| Pending
