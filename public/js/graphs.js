@@ -2,6 +2,8 @@
   var App = {
     htmlElements: {
       cardProgress: document.getElementsByClassName("myChart-js"),
+      btncardPolling: $('.card-parent')
+
       
     },
     cardActivty: {
@@ -19,7 +21,7 @@
     graph: function() {
       Array.from(App.htmlElements.cardProgress).map(element => {
         let myChart = new Chart(element, {
-          type: "pie",
+          type: "doughnut",
           data: {
             datasets: [
               {
@@ -39,6 +41,9 @@
 
     init: function() {
       App.cardActivty.addActivity();
+      App.htmlElements.btncardPolling.click( function() {
+        $(".collapse").collapse('toggle');
+      })
       console.log("inicio");
       App.graph();
     }

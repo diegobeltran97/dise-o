@@ -3,33 +3,22 @@ html
 		include head.pug
 		include nav.pug
 	body
-		.container.mt-5
-			.row
-				nav.col-4.p-0.bg-light.sidebar.main-sidebar
-					.sidebar-sticky
-						include cardProgress
-						form.nav-item
-							input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
-						ul.nav.flex-column.accordion.accordionExample
-							ul.drodropdown-menu(data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne")
-								| Pollin Station
-								span.badge.badge-primary.badge-pill 14
-								p Mark attendance or lack the poll worker
-								li#collapseOne.collapse.show
-									| ete
-									
-				
-				
-				
-				
-				
-				
-				main.col-md-8(role='main')
-					.d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.pt-3.pb-2.mb-3.border-bottom
-						h1.h2 Dashboard
-						.btn-toolbar.mb-2.mb-md-0
-							
-					h2 Section title
+			.container.mt-5
+				.row
+					nav.col-4.p-0.bg-light.sidebar.main-sidebar
+						.sidebar-sticky
+							include cardProgress
+							form.nav-item
+								input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
+							#accordionExample.accordion
+								include utilities/_dcardpolling
+														
+					main.col-8(role='main').d-flex.align-items-center.flex-column.justify-content-center
+						#option-1
+							.oval-option
+							span Select a polling place and the contets to start send results
+						#option-2
+						
 	include scripts.pug				
 					
 		

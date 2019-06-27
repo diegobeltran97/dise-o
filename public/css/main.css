@@ -110,12 +110,12 @@
   margin: 64px 16px;
 }
 
-li.nav-item .nav-link {
+.navActivities li.nav-item .nav-link {
   border-bottom: 4px solid #a6abb3;
   width: 140px;
 }
 
-li.nav-item .nav-link.active {
+.navActivities li.nav-item .nav-link.active {
   border-bottom: 4px solid #023a47;
 }
 
@@ -273,6 +273,9 @@ a.lin:hover {
 .main-sidebar {
   border-left: 4px solid #1c6983;
   padding-left: 0;
+  max-height: calc(100vh - 9rem);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .main-sidebar .card-activity {
@@ -281,6 +284,41 @@ a.lin:hover {
 
 .main-sidebar .card-activity .status {
   display: none;
+}
+
+.main-sidebar .card-activity img {
+  display: none;
+}
+
+.main-sidebar form {
+  padding: 4px 6px;
+  background-color: #ebecf0;
+}
+
+.main-sidebar form input {
+  border-radius: 100px;
+}
+
+.cardpolling .title {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #2d2f3a;
+}
+
+.cardpolling .card-header {
+  max-height: 90px;
+}
+
+/****MAIN***/
+main .oval-option {
+  width: 256px;
+  height: 256px;
+  background-color: #dfe1e5;
+  border-radius: 50%;
 }
 
 .footer {
