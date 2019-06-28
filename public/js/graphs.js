@@ -2,7 +2,8 @@
   var App = {
     htmlElements: {
       cardProgress: document.getElementsByClassName("myChart-js"),
-      btncardPolling: $('.card-parent')
+      btncardPolling: $('.card-parent'),
+      btnoption: $('.btn-option-js')
 
       
     },
@@ -43,6 +44,11 @@
       App.cardActivty.addActivity();
       App.htmlElements.btncardPolling.click( function() {
         $(".collapse").collapse('toggle');
+      })
+
+      App.htmlElements.btnoption.click( function() {
+        $("#option-1").hide();
+        $("#option-2").show();
       })
       console.log("inicio");
       App.graph();

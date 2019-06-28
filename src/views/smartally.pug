@@ -15,10 +15,12 @@ html
 														
 					main.col-8(role='main').d-flex.align-items-center.flex-column.justify-content-center
 						#option-1
-							.oval-option
-							span Select a polling place and the contets to start send results
+							.container.d-flex.align-items-center.justify-content-center.flex-column
+								.oval-option.d-flex.align-items-center.justify-content-center
+									img(src="img/folder.png", alt="", srcset="")
+								span  Select a polling place and the contets to start send results
 						#option-2
-						
+							include ./utilities/_dTakereport.pug
 	include scripts.pug				
 					
 		
