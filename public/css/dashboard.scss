@@ -25,10 +25,18 @@
 @import "_cardPolling";
 
 /****MAIN***///// 
-main #option-2 {
-    display: none;
+main #option-1  {
+  
+    height: 100%;
 }
-main #option-1 span {
+
+main #option-1 .container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main #option-1 span { 
     width: 438px;
     height: 72px;
     font-size: 24px;
@@ -40,4 +48,38 @@ main #option-1 span {
     height: 256px;
     background-color: #dfe1e5;
     border-radius: 50%;
+}
+main #option-2 {
+    display: none;
+}
+main .steps  {
+    max-height: 130px;
+    justify-content: center;
+}
+.takeReportPhoto .title {
+    display: block;
+    margin: 10px;
+}
+#option-2 .takeReportPhoto .action {
+    text-align: center;
+}
+.colormain {
+    width: 179px;
+    height: 48px;
+    border-radius: 4px;
+    border: solid 1px #4d7782;
+    background-color:#003d4c;
+}
+#option-3  .takeReportPhotoStep1  {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+
+}
+#option-3 .row  {
+    justify-content: center;
+}
+
+#option-5 .row {
+    justify-content: center;
 }

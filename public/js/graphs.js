@@ -3,7 +3,9 @@
     htmlElements: {
       cardProgress: document.getElementsByClassName("myChart-js"),
       btncardPolling: $('.card-parent'),
-      btnoption: $('.btn-option-js')
+      btnoption: $('.btn-option-js'),
+      btnState: $('#btn-state-js'),
+      options: $('#options')
 
       
     },
@@ -17,6 +19,36 @@
                 }
            })
        }
+    },
+    dashboard: function(){
+      let opcion = Array.from( App.htmlElements.options.children());
+      // Default status of steps
+      
+
+      opcion.forEach(function(element , index ) {
+        let btn  = element.querySelectorAll('#btn-state-js');
+        
+    
+        // if ( element.getAttribute("status") == "false" ) {
+        //       element.setAttribute("style", "display:none;");
+        //  }
+          
+      })
+      //Dinamyc Steps
+      let options =  App.htmlElements.options.children();
+      App.htmlElements.btnState.click( function () {
+
+      })
+      App.htmlElements.btncardPolling.click( function() {
+        $(".collapse").collapse('toggle');
+        $("#option-1").toggle();
+        $("#option-2").toggle();
+      })
+
+      App.htmlElements.btnoption.click( function() {
+        $("#option-2").toggle();
+        $("#option-1").toggle();
+      })
     },
 
     graph: function() {
@@ -42,15 +74,8 @@
 
     init: function() {
       App.cardActivty.addActivity();
-      App.htmlElements.btncardPolling.click( function() {
-        $(".collapse").collapse('toggle');
-      })
-
-      App.htmlElements.btnoption.click( function() {
-        $("#option-1").hide();
-        $("#option-2").show();
-      })
-      console.log("inicio");
+       App.dashboard();
+    
       App.graph();
     }
   };

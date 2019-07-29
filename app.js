@@ -16,8 +16,8 @@ app.get('/', (req, res) => {
   res.render("index");
 });
 
-app.get('/smtally', (req, res) => {
-  res.render("smartally");
+app.get('/sendResults', (req, res) => {
+  res.render("sendResults");
 });
 
 app.listen(port, () => {

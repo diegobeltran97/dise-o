@@ -41,9 +41,33 @@
   max-height: 90px;
 }
 
+.cardpolling .cardpaddingActivie {
+  padding: 0;
+}
+
+.cardpolling .cardActivitie {
+  padding: 4px;
+}
+
 /****MAIN***/
-main #option-2 {
-  display: none;
+main #option-1 {
+  height: 100%;
+}
+
+main #option-1 .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main #option-1 span {
@@ -59,5 +83,58 @@ main .oval-option {
   height: 256px;
   background-color: #dfe1e5;
   border-radius: 50%;
+}
+
+main #option-2 {
+  display: none;
+}
+
+main .steps {
+  max-height: 130px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.takeReportPhoto .title {
+  display: block;
+  margin: 10px;
+}
+
+#option-2 .takeReportPhoto .action {
+  text-align: center;
+}
+
+.colormain {
+  width: 179px;
+  height: 48px;
+  border-radius: 4px;
+  border: solid 1px #4d7782;
+  background-color: #003d4c;
+}
+
+#option-3 .takeReportPhotoStep1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#option-3 .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#option-5 .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=dashboard.css.map */

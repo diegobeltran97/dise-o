@@ -3,7 +3,7 @@ html
 		include head.pug
 		include nav.pug
 	body
-			.container.mt-5
+			.ml-5.mr-5.mt-4
 				.row
 					nav.col-4.p-0.bg-light.sidebar.main-sidebar
 						.sidebar-sticky
@@ -13,14 +13,21 @@ html
 							#accordionExample.accordion
 								include utilities/_dcardpolling
 														
-					main.col-8(role='main').d-flex.align-items-center.flex-column.justify-content-center
-						#option-1
-							.container.d-flex.align-items-center.justify-content-center.flex-column
+					main#options.col-8(role='main').d-flex.flex-column
+						#option-1.row(status="true")
+							.container
 								.oval-option.d-flex.align-items-center.justify-content-center
 									img(src="img/folder.png", alt="", srcset="")
 								span  Select a polling place and the contets to start send results
-						#option-2
+						#option-2.row(status="false" )
 							include ./utilities/_dTakereport.pug
+						#option-3.row(status="false" )
+							include ./utilities/_dTakephoto.pug
+						#option-4.row(status="false")
+							include ./utilities/_dTakephotostep2.pug
+						#option-5.row(status="false")
+							include ./utilities/_dTakephoto.pug
+						
 	include scripts.pug				
 					
 		
