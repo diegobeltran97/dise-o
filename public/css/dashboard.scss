@@ -1,4 +1,10 @@
 
+.dashboardMain {
+    height: 80%;
+    border-radius: 6px;
+    border: solid 1px #dfe1e5;
+
+}
  .main-sidebar {
     border-left: 4px solid #1c6983;
    padding-left: 0;
@@ -63,17 +69,13 @@ main .steps  {
 #option-2 .takeReportPhoto .action {
     text-align: center;
 }
-.colormain {
-    width: 179px;
-    height: 48px;
-    border-radius: 4px;
-    border: solid 1px #4d7782;
-    background-color:#003d4c;
-}
-#option-3  .takeReportPhotoStep1  {
+
+ .takeReportPhotoStep1  {
    display: flex;
    justify-content: center;
    flex-direction: column;
+   height: 100%;
+   text-align: center;
 
 }
 #option-3 .row  {

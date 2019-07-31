@@ -4,7 +4,7 @@ html
 		include nav.pug
 	body
 			.ml-5.mr-5.mt-4
-				.row
+				.row.dashboardMain
 					nav.col-4.p-0.bg-light.sidebar.main-sidebar
 						.sidebar-sticky
 							include cardProgress
@@ -12,8 +12,9 @@ html
 								input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
 							#accordionExample.accordion
 								include utilities/_dcardpolling
+								include utilities/_dcardpolling
 														
-					main#options.col-8(role='main').d-flex.flex-column
+					main#options.col-8(role='main')
 						#option-1.row(status="true")
 							.container
 								.oval-option.d-flex.align-items-center.justify-content-center
@@ -27,6 +28,8 @@ html
 							include ./utilities/_dTakephotostep2.pug
 						#option-5.row(status="false")
 							include ./utilities/_dTakephoto.pug
+						#option-6.row(status="false")
+							include ./utilities/_dTakephotostep2.pug
 						
 	include scripts.pug				
 					

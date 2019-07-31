@@ -7,10 +7,16 @@
     line-height: 1.5;
     letter-spacing: normal;
     color: #2d2f3a;
+    margin-left: 10%;
+
 }
 .cardpolling .card-header{
     max-height: 90px;
 }
+.cardpolling .card-header div.row {
+    align-items: center;
+}
+
 .cardpolling .cardpaddingActivie {
     padding: 0;
 }

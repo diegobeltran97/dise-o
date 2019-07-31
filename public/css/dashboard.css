@@ -1,3 +1,9 @@
+.dashboardMain {
+  height: 80%;
+  border-radius: 6px;
+  border: solid 1px #dfe1e5;
+}
+
 .main-sidebar {
   border-left: 4px solid #1c6983;
   padding-left: 0;
@@ -35,10 +41,17 @@
   line-height: 1.5;
   letter-spacing: normal;
   color: #2d2f3a;
+  margin-left: 10%;
 }
 
 .cardpolling .card-header {
   max-height: 90px;
+}
+
+.cardpolling .card-header div.row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cardpolling .cardpaddingActivie {
@@ -105,15 +118,7 @@ main .steps {
   text-align: center;
 }
 
-.colormain {
-  width: 179px;
-  height: 48px;
-  border-radius: 4px;
-  border: solid 1px #4d7782;
-  background-color: #003d4c;
-}
-
-#option-3 .takeReportPhotoStep1 {
+.takeReportPhotoStep1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,6 +129,8 @@ main .steps {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
+  text-align: center;
 }
 
 #option-3 .row {
