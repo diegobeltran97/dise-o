@@ -48,7 +48,7 @@
       })
 
       App.htmlElements.btncardPolling.click( function() {
-     
+        $(".collapse").collapse('toggle');
         $("#options").toggle();
     
       })

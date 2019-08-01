@@ -14,7 +14,7 @@ html
 								include utilities/_dcardpolling
 								include utilities/_dcardpolling
 														
-					main#options.col-8(role='main')
+					main#options.col-8(role='main').main-options 
 						#option-1.row(status="true")
 							.container
 								.oval-option.d-flex.align-items-center.justify-content-center
@@ -30,6 +30,8 @@ html
 							include ./utilities/_dTakephoto.pug
 						#option-6.row(status="false")
 							include ./utilities/_dTakephotostep2.pug
+						#option-7.row(status="true")
+							include ./utilities/_dregisterVote.pug
 						
 	include scripts.pug				
 					

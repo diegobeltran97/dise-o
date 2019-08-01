@@ -63,6 +63,12 @@
 }
 
 /****MAIN***/
+main.main-options {
+  max-height: calc(100vh - 9rem);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 main #option-1 {
   height: 100%;
 }
